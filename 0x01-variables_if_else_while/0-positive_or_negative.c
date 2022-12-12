@@ -2,17 +2,12 @@
 #include <time.h>
 
 /**
- * void main function:x
- *  - this is the main function
- * description - whether number is +ve, -ve or zero
- * return - it return 0
+ * main - print number value
+ * description: whether number is +ve, -ve or zero
+ * Return: 0
  */
-/* more headers goes there */
 
-
-
-/* betty style doc for function main goes there */
-
+/* function main*/
 int main(void)
 {
 	int n;
