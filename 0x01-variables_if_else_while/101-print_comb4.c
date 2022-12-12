@@ -6,17 +6,31 @@
  */
 int main(void)
 {
-int tens;
-int ones;
-for (tens = 0; tens <= 9; tens++)
+int i;
+int n;
+int j;
+
+for (i = 48; i < 58; i++)
 {
-for (ones = tens + 1; ones <= 9; ones++)
-{putchar(tens + '0');
-putchar(ones + '0');
-if (tens < 8)
+for (n = 48; n < 58; n++)
 {
+if (n > i)
+{
+for (j = 48; j < 58; j++)
+{
+if (j > n)
+{
+putchar(i);
+putchar(n);
+putchar(j);
+if (i == 55 && n == 56 && j == 57)
+{
+break;
+}
 putchar(',');
 putchar(' ');
+}
+}
 }
 }
 }
