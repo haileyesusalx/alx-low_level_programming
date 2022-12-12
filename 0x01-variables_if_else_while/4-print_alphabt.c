@@ -1,0 +1,17 @@
+#include <stdio.h>
+/**
+ * main - print alphabet
+ * description: print alphabet in order
+ * Return: Always success
+ */
+int main(void)
+{
+char c;
+for (c = 'a'; c <= 'z'; c++)
+{
+if (c != 'e' && c != 'q')
+putchar(c);
+}
+putchar('\n');
+return (0);
+}
