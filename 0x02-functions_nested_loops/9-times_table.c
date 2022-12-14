@@ -1,8 +1,8 @@
 #include "main.h"
+
 /**
- * times_table - prints the 9 times table
- * Description: prints the 9 times table statrting from zero
- * Return: Always 0
+ * times_table - prints times table
+ * Return:void
  */
 
 void times_table(void)
@@ -24,21 +24,21 @@ while (a <= 9)
 		else if (rep < 10)
 		{
 			_putchar(' ');
-		_putchar('0' + rep);
+			_putchar('0' + rep);
 		}
 		else
 		{
-		_putchar('0' + rep / 10);
-	_putchar('0' + rep % 10);
+			_putchar('0' + rep / 10);
+			_putchar('0' + rep % 10);
 		}
-	if (b < 9)
-	{
-		_putchar(',');
-		_putchar(' ');
+		if (b < 9)
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
+		b++;
 	}
-	b++;
 	_putchar('\n');
 	a++;
-	}
 }
 }
