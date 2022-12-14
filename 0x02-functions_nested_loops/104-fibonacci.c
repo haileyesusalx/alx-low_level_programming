@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: computes and prints the sum of all the multiples of 3 and 5 below 1024 (exclude), followed by anew line
+ * Description: computes and prints the sum of all the multiples of 3
+ * and 5 below 1024 (exclude), followed by anew line
  * Return: 0
  */
 int main(void)
@@ -38,5 +39,5 @@ int main(void)
 		bef2 = aft2 - bef2;
 	}
 	printf("\n");
-	return (0),
+	return (0);
 }
