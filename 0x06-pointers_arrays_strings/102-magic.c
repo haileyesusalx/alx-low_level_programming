@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/** Description - function prints 98 */
 int main(void)
 {
 	int n;
