@@ -1,5 +1,5 @@
-#include <stdio
-/** description:void function print a[2] = 98*/
+#include <stdio.h>
+
 int main(void)
 {
 	int n;
