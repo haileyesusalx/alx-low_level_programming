@@ -1,32 +1,38 @@
 #include "main.h"
-int is_divisible(int num, int div);
-int is_prime_number(int n);
 
 /**
- * prime2 - Makes possible to evaluate from 1 to n
- * @a: same number as n
- * @b: number that iterates from 1 to n
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * helperFunction - returns 0 or 1.
+ * @num: number being checked.
+ * @i: possible factor of the number
+ * Return: 0 if not rime, 1 if prime.
  */
-int prime2(int a, int b)
+int helperFunction(int num, int i)
 {
-	if (a == b)
-		return (1);
-	else if (a % b == 0)
-		return (0);
-	return (prime2(a, b + 1));
-}
+	if (i < num)
+	{
+		if (num % i == 0)
+		{
+			return (0);
+		}
+		else
+		{
+			return (helperFunction(num, i + 1));
+		}
 
 /**
- * is_prime_number - checks if a number is prime
- * @n: Number Integer
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * is_prime_number - checks if a number is prime or not.
+ * @n: Number to be checked
+ * Return: 1 if number is prime.
+ * 0 if number is not prime.
  */
 int is_prime_number(int n)
 {
 	if (n <= 1)
+	{
 		return (0);
-	return (prime2(n, 2));
+	}
+	else
+	{
+	return (helperFunction(n, 2));
+	}
 }
