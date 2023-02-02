@@ -15,6 +15,9 @@ call printf
 mov eax, 0
 ret
 
+Advanced task
+
+vi
 #include <stdio.h>
 /**
 * bmain - function exeucted before main
