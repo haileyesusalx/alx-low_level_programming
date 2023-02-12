@@ -17,7 +17,7 @@ char *create_buffer(char *file)
 
 		if (buffer == NULL)
 		{
-			printf(STDERR_FILENO,
+			dprintf(STDERR_FILENO,
 					"Error: Can't write to %s\n", file);
 			exit(99);
 		}
